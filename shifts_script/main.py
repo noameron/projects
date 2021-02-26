@@ -128,10 +128,7 @@ def site_login(*args):
         usernames.append(user_name)
         employees[user_name]['employee_id'] = user['id']
         employees[user_name]['user_id'] = user['user']['id']
-        # employees[user_name]['email'] = user['user']['email']
-        # employees[user_name]['first_name'] = user['user']['first_name']
-        # employees[user_name]['last_name'] = user['user']['last_name']
-        # employees[user_name]['phone_number'] = user['user']['phone_number']
+
 
     # Getting next weeek shifts
     if checkbox_var.get() == 1:
@@ -198,7 +195,6 @@ def site_login(*args):
         },
         }
         write_to_calendar.create_event(event)
-        # calendar_api.create_event(desc, iso_start_time, iso_end_time)
         label_event_complete.grid(row = 9, column = 1)
         labels_list.append(label_event_complete)
 
