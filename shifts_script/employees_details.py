@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 import requests
 
 
-driver_path = "C:\\Users\\Noam\\Documents\\Python Scripts\\projects\\shifts_script\\chromedriver.exe"
+driver_path = "path\\to\\chrome\\drive.exe"
 shiftorgnizer_login_url = 'https://app.shiftorganizer.com/login/?lang=he&previous=homepage&greeting=true'
 
 # # enabling headless chrome
@@ -25,9 +25,9 @@ usernames = []
 def get_employees_details():
     driver.get (shiftorgnizer_login_url)
     driver.implicitly_wait(20)
-    driver.find_element_by_id('company').send_keys(132)
-    driver.find_element_by_id ('username').send_keys(<Your username>)
-    driver.find_element_by_id ('password').send_keys(<Your Password>)
+    driver.find_element_by_id('company').send_keys(entry_company_id.get())
+    driver.find_element_by_id ('username').send_keys(entry_username.get())
+    driver.find_element_by_id ('password').send_keys(entry_password.get())
     driver.find_element_by_id('log-in').click()
     WebDriverWait(driver, 10).until(EC.title_contains("בית | ShiftOrganizer"))
     # print(driver.get_cookies())
