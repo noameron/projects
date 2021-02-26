@@ -8,6 +8,6 @@ This is built with Selenium (Chrome headless mode), Tkinter, Google-Calendar API
 - Retrieves employees Shifts for current week.
 - User can choose between getting current week shifts or next week shifts 
 - After retrieving the data it automatically connects to your google calendar (after authentication) 
-- And writes shifts. It avoids re-entering same shifts twice.
+- Writes shifts and avoids re-entering same shifts twice to calendar.
 
 
