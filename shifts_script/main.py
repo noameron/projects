@@ -109,7 +109,6 @@ def site_login(*args):
         label_bad_login.grid(row=8, column=1)
         labels_list.append(label_bad_login)
     
-    # print(driver.get_cookies())
     cookies_before = driver.get_cookies()
     sessionid_name = cookies_before[0]['name']
     sessionid_value = cookies_before[0]['value']
