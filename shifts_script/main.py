@@ -10,7 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 import calendar_api
 
-driver_path = "C:\\Users\\Noam\\Documents\\Python Scripts\\projects\\shifts_script\\chromedriver.exe"
+driver_path = "path//to//selenium//chromedriver.exe"
 shiftorgnizer_login_url = 'https://app.shiftorganizer.com/login/?lang=he&previous=homepage&greeting=true'
 
 # enabling headless chrome
